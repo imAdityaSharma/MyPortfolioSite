@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>{% block title%}{{context}}{% endblock title %} </title>
+    <title>{% block title%}Aditya sharma{% endblock title %} </title>
   </head>
   <body>
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -23,7 +23,7 @@
                     <a class="nav-link active" aria-current="page" href="#">My projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About me</a>
+                    <a class="nav-link" href="/blogs">Blogs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://github.com/imAdityaSharma" target=_blank rel="noreferrer noopener"><img src="/static/github.png" width="15" height="15"class="img-icon" alt="...">  My GitHub </a>
@@ -43,7 +43,7 @@
         </div>
         <div class="image">
             <style>
-                img {  border-radius: 45%; }
+                img {  border-radius: 50%; }
             </style>
             <img src="/static/profile.jpg" width="60" height="60" alt="..." >
         </div>
@@ -53,7 +53,9 @@
 
 <!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-      {%block body%} {%endblock body%}
+      {%block body%} 
+      
+      {%endblock body%}
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

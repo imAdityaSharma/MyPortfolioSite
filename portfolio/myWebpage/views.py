@@ -7,3 +7,5 @@ def index(request):
     }
     
     return render(request,'base.html',context)
+def blogs(request):
+    return render(request,'blogs.html')
