@@ -8,6 +8,12 @@ def index(request):
     
     return render(request,'base.html',context)
 def blogs(request):
-    return render(request,'blogs.html')
+    context = {
+        'context':"My Blogs"
+    }
+    return render(request,'blogs.html', context)
 def b1(request):
-    return render(request,'b1.html')
+    context = {
+        'context':"blog 1"
+    }
+    return render(request,'b1.html',context)

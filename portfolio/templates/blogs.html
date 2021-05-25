@@ -9,6 +9,7 @@
 </head>
 <body>
     {% block body %}
+<!-- ================================= new Blogs title are added here ====================================== -->
     <div2 class="list-group list-group-flush" px=20>
         <style>
             div2 {
@@ -17,13 +18,15 @@
               padding-left: 20px;
             }
             </style>    
-            
+
             <a type="button" class="list-group-item list-group-item-action" href="b1">The current button</a>
             <a type="button" href="b2" class="list-group-item list-group-item-action">A second item</a>
             <a type="button" href="b3" class="list-group-item list-group-item-action">A third button item</a>
             <a type="button" href="b4" class="list-group-item list-group-item-action">A fourth button item</a>
             <a type="button" href="b5" class="list-group-item list-group-item-action">A disabled button item</a>
+<!-- ================================= end of blog adding component ==========================================-->
           </div>
+<!-- ================================= blogs are displayed here ==============================================-->
           <disp class="container">
               <style>
                     disp{
@@ -36,9 +39,8 @@
                 </style>
             {% block blogDisp %}{% endblock blogDisp %}
           </disp>
-          
-    {% endblock body %}
-        
+<!-- ========================================================================================================= -->
+    {% endblock body %}    
 </body>
 </html>
 
