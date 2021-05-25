@@ -9,3 +9,5 @@ def index(request):
     return render(request,'base.html',context)
 def blogs(request):
     return render(request,'blogs.html')
+def b1(request):
+    return render(request,'b1.html')
