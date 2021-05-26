@@ -14,13 +14,14 @@
   </head>
   <body>
    
-     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-black1">
         <div class="container-fluid">
 <!-- ==================================== styling end ============================================================================================ -->
         <style>
     
-            .bg-black{
+            .bg-black1{
                 background-color: black;
+                color: ivory;
             }
                 .HomeBtn {
                     padding-top: .3125rem;
@@ -43,60 +44,62 @@
                 body{
                                 
                                 position: relative;
-                                background-image: url('static/basebg.jpg');
+                                background-image: url('/static/basebg.svg');
                                 background-position: inherit;
-                                background-size: 100%;
+                                background-size: auto;
                                 
                     }
                 .im1{
-                                border-radius: 50%;
+                                border-radius: 10px;
+                                background-color: lightcyan;
                     }
+                .im2{
+                                border-radius: 10px;
+                                background-color: lightcyan;
+                    }
+                      
                       
         </style>
 <!-- ==================================== styling end ============================================================================================ -->
-        <a class="HomeBtn font-effect-outline" href="home">Home</a>
-        
+        <a class="HomeBtn" href="/home">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        
+        <div class="collapse navbar-collapse bg-black1" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="myprojects">My projects</a>
+                    <a class="nav-link " aria-current="page" href="/myprojects">My projects</a>
                 </li>
+          
                 <li class="nav-item">
                     <a class="nav-link" href="/blogs">Blogs</a>
                 </li>
+          
                 <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/imAdityaSharma" target=_blank rel="noreferrer noopener"><img class="im1" src="/static/github.png" width="25" height="25"class="img-icon" alt="...">  My GitHub </a>
+                    <a class="nav-link" href="https://github.com/imAdityaSharma" target=_blank rel="noreferrer noopener"><img class="im1" src="/static/github.svg" width="25" height="25"class="img-icon" alt="...">    My GitHub </a>
                 </li>
 
-
+<!--================================================== social media drop down menu start ==========================================================================================================================================================-->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle nav-pills" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Connect With Me
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100005663714187" target=_blank rel="noreferrer noopener"><img class="im1" src="/static/fb.png" width="15" height="15"class="img-icon" alt="..."> Facebook</a></li>
-                        <li><a class="dropdown-item" href="https://www.instagram.com/im_adisharma/" target=_blank rel="noreferrer noopener"><img class="im1" src="/static/insta.png" width="15" height="15"class="img-icon" alt="...">  Instagram</a></li>
-                        <li><a class="dropdown-item" href="https://twitter.com/im_adisharma" target=_blank rel="noreferrer noopener"><img class="im1" src="/static/twt.png"  width="15" height="15"class="img-icon" alt="...">  Twitter</a></li>
-                        <li><a class="dropdown-item" href="https://www.linkedin.com/in/aditya-sharma-95136716a/" target=_blank rel="noreferrer noopener"><img class="im1" src="/static/ln.png" width="15" height="15"class="img-icon" alt="...">  LinkedIn</a></li>
+                    <ul class="dropdown-menu bg-black1" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item bg-black1" href="https://www.facebook.com/profile.php?id=100005663714187" target=_blank rel="noreferrer noopener"><img class="im2" src="/static/fb.svg" width="15" height="15"class="img-icon" alt="..."> Facebook</a></li>
+                        <li><a class="dropdown-item bg-black1" href="https://www.instagram.com/im_adisharma/" target=_blank rel="noreferrer noopener"><img class="im2" src="/static/insta.svg" width="15" height="15"class="img-icon" alt="...">  Instagram</a></li>
+                        <li><a class="dropdown-item bg-black1" href="https://twitter.com/im_adisharma" target=_blank rel="noreferrer noopener"><img class="im2" src="/static/twt.svg"  width="15" height="15"class="img-icon" alt="...">  Twitter</a></li>
+                        <li><a class="dropdown-item bg-black1" href="https://www.linkedin.com/in/aditya-sharma-95136716a/" target=_blank rel="noreferrer noopener"><img class="im2" src="/static/ln.svg" width="15" height="15"class="img-icon" alt="...">  LinkedIn</a></li>
                     </ul>
                 </li>
+<!--================================================== social media drop down menu END ==========================================================================================================================================================-->
                 <li class="nav-item">
                     <a class="nav-link" href="#">My Resume</a>
                 </li>
             </ul>
+            <img class="img-thumbnail im1" src="/static/profile.png" width="60" height="60" alt="aditay sharma" >
         </div>
-        <div class="image">
-            <style>
-                img {  
-                    border-radius: 50%;
-                    padding: auto;
-                 }
-            </style>
-            <img class="img-thumbnail" src="/static/profile.png" width="60" height="60" alt="..." >
-        </div>
+            
      </div>   
   </div>
 </nav>

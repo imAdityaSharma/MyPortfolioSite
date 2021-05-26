@@ -10,47 +10,84 @@
 <body>
     
     {% block body %}
-    <div class="container">
-        <div class="row">
+    <div class="topContainer ">
+    <div class="row1">
 <!-- ================================= new Blogs title are added here ====================================== -->
-<div class="col">
-    <div2 class="list-group list-group-flush ">
+
+    <div2 class="list-group  ax ">
            
         <style>
-            body{
-                position: relative;
-            }
-            div2 {
-                position: relative;
-                padding-top: 1%;
-                padding-right: 70%;
-                
-                background-color: lightpink;
-            }
-            </style> 
+            .row1{
+                    flex-shrink: 0;
+                    width: 100%;
+                    max-width: 100%;
+                    padding-right: 10%;
+                    padding-left: 10%;
+                    margin-top: 2px;
+                    border-radius: 5px;
 
-            <a type="button" href="blogstemp/b1" class="list-group-item list-group-item-action">blog 1</a>
-            <a type="button" href="blogstemp/b2" class="list-group-item list-group-item-action">blog 2</a>
-            <a type="button" href="blogstemp/b3" class="list-group-item list-group-item-action">blog 3</a>
-            <a type="button" href="blogstemp/b4" class="list-group-item list-group-item-action">blog 4</a>
-            <a type="button" href="blogstemp/b5" class="list-group-item list-group-item-action">blog 5</a>
-          </div>
+            }
+            body{
+                
+                position: relative;
+                background-color: rgb(207, 207, 207);
+                
+            }
+            .ax {
+                position: relative;
+                padding-top: 0%;
+                padding-left: 0px;
+                width: fit-content;
+                padding-right: 0%;
+                
+                border-radius: 10px;
+                              
+            }
+            .bx {
+                position: relative;
+                padding-top: 0%;
+                padding-left: 0%;
+                max-width: max-content;
+                
+                
+            }
+            .bg-black{
+                color: rgb(36, 36, 36);
+                border-radius: 10px;
+                background-color: rgb(255, 255, 255);
+            }
+            
+            </style> 
+            <a href="/blogstemp/b1" class="list-group-item list-group-item-action bg-black" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">HTML</h5>
+                  <small>3 days ago</small>
+                </div>
+                <p class="mb-1">info of html</p>
+                <small>history</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action bg-black">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">List group item heading</h5>
+                  <small class="text-muted">3 days ago</small>
+                </div>
+                <p class="mb-1">Some placeholder content in a paragraph.</p>
+                <small class="text-muted">And some muted small print.</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action bg-black">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">List group item heading</h5>
+                  <small class="text-muted">3 days ago</small>
+                </div>
+                <p class="mb-1">Some placeholder content in a paragraph.</p>
+                <small class="text-muted">And some muted small print.</small>
+              </a>
+            </div>
+
         
 <!-- ================================= end of blog adding component ==========================================-->
 <!-- ================================= blogs are displayed here ==============================================-->
-{% block blogDisp %}<disp class="col">
-              <style>
-                    disp{   position: relative;
-                            
-                            padding-right: 2%;
-                            padding-top: 2%;
-                            padding-left: 25%;
-                            background-color:grey;
-                        }
-                </style>
-            {% endblock blogDisp %}
-          </disp>
-        </div>
+
 <!-- ========================================================================================================= -->
 </div></div>
 {% endblock body %}    
