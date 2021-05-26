@@ -25,21 +25,41 @@
             text-decoration:none;
             color: black;
         }
+        .p23{
+          color: whitesmoke;
+
+        }
     </style>
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link2 active"href="#">C/C++</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link2" href="#">Java</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link2" href="#">Machine learning</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link2" href="#">Android projects</a>
-        </li>
-      </ul>
+<!--========================================== pill buttons are added here ======================================================================================================================================-->
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+      <button class="nav-link" id="nav-Feedback-tab" data-bs-toggle="tab" data-bs-target="#nav-Feedback" type="button" role="tab" aria-controls="nav-Feedback" aria-selected="false">Feedback</button>
+    </div>
+  </nav>
+  <!--========================================== button content are added here in {%block } here{%endblock } ======================================================================================================================================-->
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        {% block home %}
+        {%endblock home %}
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+      {% block profile %}
+      {% endblock profile %}
+    </div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+          {% block contact  %}
+          {% endblock contact %}
+    </div>
+    <div class="tab-pane fade" id="nav-Feedback" role="tabpanel" aria-labelledby="nav-Feedback-tab">
+          {% block feed %}
+          {% endblock feed %}
+    </div>
+  </div>
+  <!--========================================== pill buttons end here ======================================================================================================================================-->
+  
       
       {% endblock body %}
     
