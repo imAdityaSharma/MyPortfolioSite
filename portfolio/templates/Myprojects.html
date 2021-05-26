@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{content}}</title>
+</head>
+<body>
+    {% block body %}
+    <style>
+        .nav{
+            padding-top: 5rem;
+            padding-right: 20%;
+            padding-left: 20%;
+            
+        }
+        .nav-link2{
+            font-size: 26px;
+            font-family: sans-serif;
+            padding-right: 2.5rem;
+            padding-left: 2.5rem;
+            font-style: normal;
+            text-decoration:none;
+            color: black;
+        }
+    </style>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link2 active"href="#">C/C++</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link2" href="#">Java</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link2" href="#">Machine learning</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link2" href="#">Android projects</a>
+        </li>
+      </ul>
+      
+      {% endblock body %}
+    
+    
+</body>
+</html>

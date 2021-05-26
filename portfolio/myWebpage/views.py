@@ -5,8 +5,19 @@ def index(request):
     context = {
         'context':"Aditya sharma"
     }
-    
     return render(request,'base.html',context)
+
+def home(request):
+    context = {
+        'context':"Home"
+    }
+    return render(request,'home.html',context)
+def Myprojects(request):
+    context = {
+        'context':"My Projects"
+    }
+    return render(request,'Myprojects.html',context)
+
 def blogs(request):
     context = {
         'context':"My Blogs"
@@ -16,4 +27,4 @@ def b1(request):
     context = {
         'context':"blog 1"
     }
-    return render(request,'b1.html',context)
+    return render(request,'blogstemp/b1.html',context)

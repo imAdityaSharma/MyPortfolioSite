@@ -8,39 +8,52 @@
     <title>Blogs</title>
 </head>
 <body>
+    
     {% block body %}
+    <div class="container">
+        <div class="row">
 <!-- ================================= new Blogs title are added here ====================================== -->
-    <div2 class="list-group list-group-flush" px=20>
+<div class="col">
+    <div2 class="list-group list-group-flush ">
+           
         <style>
-            div2 {
-              padding-top: 10px;
-              padding-right: 1150px;
-              padding-left: 20px;
+            body{
+                position: relative;
             }
-            </style>    
+            div2 {
+                position: relative;
+                padding-top: 1%;
+                padding-right: 70%;
+                
+                background-color: lightpink;
+            }
+            </style> 
 
-            <a type="button" class="list-group-item list-group-item-action" href="b1">The current button</a>
-            <a type="button" href="b2" class="list-group-item list-group-item-action">A second item</a>
-            <a type="button" href="b3" class="list-group-item list-group-item-action">A third button item</a>
-            <a type="button" href="b4" class="list-group-item list-group-item-action">A fourth button item</a>
-            <a type="button" href="b5" class="list-group-item list-group-item-action">A disabled button item</a>
-<!-- ================================= end of blog adding component ==========================================-->
+            <a type="button" href="blogstemp/b1" class="list-group-item list-group-item-action">blog 1</a>
+            <a type="button" href="blogstemp/b2" class="list-group-item list-group-item-action">blog 2</a>
+            <a type="button" href="blogstemp/b3" class="list-group-item list-group-item-action">blog 3</a>
+            <a type="button" href="blogstemp/b4" class="list-group-item list-group-item-action">blog 4</a>
+            <a type="button" href="blogstemp/b5" class="list-group-item list-group-item-action">blog 5</a>
           </div>
+        
+<!-- ================================= end of blog adding component ==========================================-->
 <!-- ================================= blogs are displayed here ==============================================-->
-          <disp class="container">
+{% block blogDisp %}<disp class="col">
               <style>
-                    disp{
-                            padding-top: -50px;
-                            padding-right: 30px;
-                            padding-bottom: 50px;
-                            padding-left: 1500px;
+                    disp{   position: relative;
+                            
+                            padding-right: 2%;
+                            padding-top: 2%;
+                            padding-left: 25%;
                             background-color:grey;
                         }
                 </style>
-            {% block blogDisp %}{% endblock blogDisp %}
+            {% endblock blogDisp %}
           </disp>
+        </div>
 <!-- ========================================================================================================= -->
-    {% endblock body %}    
+</div></div>
+{% endblock body %}    
 </body>
 </html>
 

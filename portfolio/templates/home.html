@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{content}}</title>
+</head>
+<body>
+    {% block body %}
+   
+<!-- ================================================= sliding images ============================================================================-->
+<style>
+    
+    img{
+        border-radius: 0%;
+    }
+    .carousel {
+        
+        position: absolute;
+        padding-left: 70%;
+        padding-right: 0%;
+
+    }
+    .wel{
+        position: relative;
+        padding-top: 5%;
+        padding-left: 20%;
+        width: 60mm;
+        height: inherit;
+        text-align: left;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 25mm;
+        font-style: normal;
+        color: white;
+        text-decoration-style: solid;
+        font-family: "Sofia", sans-serif;
+    }
+    .txtbody{
+        text-align: center;
+        font-size: 18px;
+        padding-top: 8%;
+        padding-left: 0px;
+        padding-right: 40%;
+        color: rgb(35, 44, 165);
+            }
+        .row2{
+            padding-left: 5%;
+        }
+</style>
+<div class="topContainer">
+    <div class="row">
+        <div class="wel col"><h1 class="display-1 "> Welcome</h1></div>
+              <div class="row2"> <p class="txtbody"> My name is Aditya Sharma, and my portfolio is a
+                representation of all that I've learned and accomplished as a science and engineering student.</p></div>
+<!--=========================================== carousel start ================================================================================================-->      
+        <div id="carouselExampleSlidesOnly" class="carousel slide col" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="static/3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="static/2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="static/3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+<!--============================================ carousel end ==================================================================================================-->
+    </div>
+</div>
+  
+    {% endblock body %}
+</body>
+</html>

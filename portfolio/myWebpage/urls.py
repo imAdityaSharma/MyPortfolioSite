@@ -6,6 +6,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     path('',views.index,name="home"),
+    path('home',views.home,name="home"),
+    path('myprojects',views.Myprojects,name="Myprojects"),
     path('blogs',views.blogs,name="blogs"),
-    path('b1',views.b1,name="b1")
+    #blogs templates are stored in 'template/blogstemp/' directory new pages will be added here from now
+    path('blogstemp/b1',views.b1,name="b1")
 ]
