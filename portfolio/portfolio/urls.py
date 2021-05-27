@@ -18,6 +18,6 @@ from django.urls import path,include
 from myWebpage import  views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('masteradmin/', admin.site.urls),
     path('',include('myWebpage.urls'))
 ]

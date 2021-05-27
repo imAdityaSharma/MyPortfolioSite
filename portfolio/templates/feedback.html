@@ -19,16 +19,23 @@
             padding-right: 10%;
         }
     </style>
-    <div class="form-cc ">
-    <div class="mb-3 ">
-            <label for="ControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="ControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3 ">
-            <label for="ControlTextarea1" class="form-label">Your valuable feedback</label>
-                    <textarea class="form-control" id="ControlTextarea1" rows="3"></textarea>
-    </div>
-    <button type="button" class="btn btn-outline-primary" herf="/feedbThanks" >Submit</button>
+    <div class="form-cc" >
+        <h1 class="text-center"> feedback</h1>
+        <form method="POST" action="/feedback">
+         {% csrf_token %}
+            <div class="form-group">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="   ">
+            </div>
+            
+            <div class="form-group">
+                <label for="feedback" class="form-label">Enter your query</label>
+                <textarea class="form-control" id="feedback" name="feedback" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">submit</button>
+        </form>
+          
+    
     </div>
     {% endblock body %}
 

@@ -1,34 +1,33 @@
 from django.shortcuts import render,HttpResponse
 from myWebpage.models import feedback as Fb
+from datetime import datetime
 # Create your views here.
 def index(request):
     context = {
         'context':"Aditya sharma"
     }
-    return render(request,'/base.html',context)
+    return render(request,'base.html',context)
 
 def home(request):
     context = {
         'context':"Home"
     }
-    return render(request,'/home.html',context)
+    return render(request,'home.html',context)
 def Myprojects(request):
     context = {
         'context':"My Projects"
     }
-    return render(request,'/Myprojects.html',context)
+    return render(request,'Myprojects.html',context)
 
 def Feedback(request):
     context = { 'context':"feedback"   }
     if request.method == "POST":
         email = request.POST.get('email')
-        feed = request.POST.get('feed')
+        feed = request.POST.get('feedback')
         date = datetime.today()
-        f = Fb(mail=email,feed=feed,date=date)
+        f = Fb(email=email,feed=feed,date=date)
         f.save()
-        return render(request,'/feedbThanks.html',context)
-    else:
-        return render(request,'/feedback.html',context)
+    return render(request,'feedback.html',context)
 
 def blogs(request):
     context = {
