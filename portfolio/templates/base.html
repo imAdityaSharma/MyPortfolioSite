@@ -14,27 +14,48 @@
   </head>
   <body>
    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black1">
-    <div class="container-fluid">
+    
 <!-- ==================================== styling end ============================================================================================ -->
         <style>
+            .foot{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                
+            }
+            .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, 
+                    .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+                        display: flex;
+                        flex-wrap: inherit;
+                        align-items: center;
+                        justify-content: unset;
+                        }
+            .navbar-nav {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 0;
+                        margin-bottom: 0;
+                        list-style: none;
+                        align-items: center;
+                    }               
     
             .bg-black1{
                 background-color: black;
-                color: ivory;
+                color: rgb(255, 255, 255);
             }
-                .HomeBtn {
+            .HomeBtn {
                     padding-top: .3125rem;
                     padding-bottom: .5rem;
-                    margin-right: 1rem;
-                    font-size: 1.25rem;
+                    text-align: center;
+                    font-size: 125%;
                     text-decoration: none;
-                    white-space: nowrap;
-                    font-family: var(--bs-font-sans-serif);
+                    
+                    
                     box-sizing: border-box;
                     font-weight: 400;
                     line-height: 1.5;
-                    color: #fff;
+                    color: rgb(255, 255, 255);
                 }
                 .navbar-expand-lg .navbar-nav .nav-link {
                                padding-right: 3rem;
@@ -46,10 +67,12 @@
                                 position: relative;
                                 background-image: url('/static/basebg.svg');
                                 background-position: inherit;
-                                background-size: auto;
+                                background-size: 100%;
+                                background-repeat: no-repeat;
                                 
                     }
                 .im1{
+                                
                                 border-radius: 8px;
                                 background-color: rgb(255, 255, 255);
                     }
@@ -57,17 +80,47 @@
                                 border-radius: 3px;
                                 background-color: rgb(0, 0, 0);
                     }
-                      
+                    .IR{
+                        line-height: 1.5;
+                        padding-top: .3125rem;
+                        padding-bottom: .5rem;
+                        position: relative;
+                        padding-left: 0%;
+                    }
+                    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, 
+                    .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+                        display: flex;
+                        flex-wrap: inherit;
+                        align-items: center;
+                        justify-content: unset;
+                        }
+                .vc{
+                    padding-left: 0%;
+                    font-style: normal;
+                    color: thistle;
+                    text-decoration: unset;
+                }
+                .vcc{
+                    font-size: 2mm;
+                    padding-left: 1%;
+                    font-style: normal;
+                    color: thistle;
+                    text-decoration: unset;
+                }
                       
         </style>
 <!-- ==================================== styling end ============================================================================================ -->
-        <a class="HomeBtn" href="/home">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar nav-tabs navbar-expand-lg navbar-dark bg-black1 active" role="tablist">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav IR">
+                        <a class=" nav-link HomeBtn nav-tabs tab-pane" href="/home">Home</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
         
-        <div class="collapse navbar-collapse bg-black1" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+                        
+            
                 <li class="nav-item">
                     <a class="nav-link " aria-current="page" href="/myprojects">My projects</a>
                 </li>
@@ -79,8 +132,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="https://github.com/imAdityaSharma" target=_blank rel="noreferrer noopener"><img class="im1" src="/static/github.svg" width="25" height="25"class="img-icon" alt="...">    My GitHub </a>
                 </li>
-
-<!--================================================== social media drop down menu start ==========================================================================================================================================================-->
+                <!--========================================== social media drop down menu start =========================================================-->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Connect With Me
@@ -92,15 +144,15 @@
                         <li><a class="dropdown-item bg-black1" href="https://www.linkedin.com/in/aditya-sharma-95136716a/" target=_blank rel="noreferrer noopener"><img class="im2" src="/static/ln.svg" width="15" height="15"class="img-icon" alt="...">  LinkedIn</a></li>
                     </ul>
                 </li>
-<!--================================================== social media drop down menu END ==========================================================================================================================================================-->
+                <!--========================================= social media drop down menu END =======================================================-->
                 <li class="nav-item">
                     <a class="nav-link" href="#">My Resume</a>
                 </li>
             </ul>
         </div>
-        <img class="img-thumbnail im1" src="/static/profile.png" width="60" height="60" alt="aditay sharma" >
-     </div>   
-</nav>
+        <img class="img-thumbnail im1" src="/static/profile.png" width="60" height="60" alt="aditya sharma" >
+        </div> 
+    </nav>
 
 <!-- ============================================================================================================================================================================================================================================================ -->
 
@@ -117,5 +169,19 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     -->
+
+    <div class="foot">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black1">
+            <div class="container-fluid navbar-nav">
+                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="#">xyz</a>
+                  <a class="nav-link" href="#">xyz</a>
+                  <a class="nav-link" href="/feedback">feedback</a>
+                  <li class="nav-item">made with love❤</li>
+                  <li class="nav-item">using <a class="vc" href="https://www.djangoproject.com/" target="_blank"> Django</a></li>
+                  <a class="vcc" href="https://www.vectorstock.com/royalty-free-vector/abstract-background-for-use-in-design-vector-30182387" target="_blank">Vector image by VectorStock / Robot</a>
+              </div>
+          </nav>
+        </div>
   </body>
 </html>

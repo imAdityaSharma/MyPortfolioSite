@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{context}}</title>
+</head>
+<body>
+    
+    {% block body %}
+    <style>
+        .form-cc{
+            color: tomato;
+            padding-top:5%;
+            width: 60%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    </style>
+    <div class="form-cc ">
+    <div class="mb-3 ">
+            <label for="ControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="ControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3 ">
+            <label for="ControlTextarea1" class="form-label">Your valuable feedback</label>
+                    <textarea class="form-control" id="ControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="button" class="btn btn-outline-primary" herf="/feedbThanks" >Submit</button>
+    </div>
+    {% endblock body %}
+
+</body>
+</html>
